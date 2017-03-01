@@ -4,7 +4,6 @@ var mongoose = require("mongoose");
 var path = require("path");
 
 var local_database_uri = "mongodb://localhost/chorefinder";
-var MONGOLAB_URI = "mongodb://<dbuser>:<dbpassword>@ds113000.mlab.com:13000/heroku_59frhz9d";
 var database_uri = process.env.MONGOLAB_URI || local_database_uri;
 var port = process.env.PORT || 7777;
 //controllers
