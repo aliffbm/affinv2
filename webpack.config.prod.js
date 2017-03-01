@@ -1,6 +1,6 @@
 module.exports = {
   entry: [
-    './app/main.jsx'
+    __dirname + "./app/main.jsx"
   ],
   output: {
     path: __dirname,
