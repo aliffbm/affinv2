@@ -1,0 +1,18 @@
+[
+		{
+			"name": "Dishes",
+			"expectedTime": "30 min"
+		},
+		{
+			"name": "Trash",
+			"expectedTime": "10 min"
+		},
+		{
+			"name": "Vacuuming",
+			"expectedTime": "45 min"
+		},
+		{
+			"name": "Mopping",
+			"expectedTime": "1 hr"
+		}
+]
