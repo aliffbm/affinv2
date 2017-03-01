@@ -1,6 +1,6 @@
 module.exports = {
   entry: [
-    'app/lib'
+    '/'
   ],
   output: {
     path: __dirname,
