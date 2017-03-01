@@ -3,7 +3,7 @@ var browserify = require('browserify');
 var reactify = require('reactify');
 var source = require('vinyl-source-stream');
 
-gulp.task("heroku:production", function(){
+gulp.task("bundle", function(){
 	return browserify({
 		entries: "./app/main.jsx",
 		debug: true
