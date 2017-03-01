@@ -35,6 +35,6 @@
     "eslint-plugin-react": "^6.10.0"
   },
   "scripts":{
-    "start": "node ./server/server.js"
+    "start": "node server.js"
   }
 }
