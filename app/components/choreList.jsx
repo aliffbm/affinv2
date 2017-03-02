@@ -9,6 +9,7 @@ arrayMove = Sort.arrayMove;
 
 const SortableItem = Sort.SortableElement(({value1, value2, value3}) =><li id="imageList" style={{backgroundImage: 'url('+value1+')'}}><div>{value2} {value3}</div></li>);
 
+// will work on this later...... 
 const SortableList = SortableContainer(({items}) => {
     return (
         <div className="container" id="holdingImages">
@@ -46,7 +47,6 @@ module.exports = React.createClass({
                         this.props.chores.map(function(s,index){
                             return(
                                 <ChoreInfo info={s} key={"chore"+index} />
-
                             )         
                         })
                     }

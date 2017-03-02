@@ -25,6 +25,11 @@ h4 strong{
      margin-top: 0px;
      bottom: 0;
 }
+#response-glyph{
+     width: 25px;
+    display: inline-block;
+    margin-left: 20px;
+}
 #definitionContainer{
      padding:30px;
 }
