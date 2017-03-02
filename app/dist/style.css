@@ -5,8 +5,29 @@ html, body{
 
 
 
+p {
+     margin:0;
+     padding:0;
+}
 
+h4 strong{
+     font-family: Georgia;
 
+}
+.definitionPad{
+     background-color: black;
+     position: absolute;
+     color:white;
+     opacity: .7;
+     border-radius: 20px;
+     min-width: 250px;
+     margin: 10px;
+     margin-top: 0px;
+     bottom: 0;
+}
+#definitionContainer{
+     padding:30px;
+}
 .navbarColor{
 
      background-color: #4a62d6 !important;
@@ -52,7 +73,7 @@ html, body{
 }
 
 #imgBrand{
-     background-image: url(../images/gear.jpg);
+     background-image: url(gear.jpg);
      background-repeat: no-repeat;
      background-position: center;
      background-attachment: fixed;
@@ -78,7 +99,7 @@ html, body{
 }
 
 #homePage{
-     background-image: url("../images/homeBackGround.jpg");
+     background-image: url("togetherness.jpg");
      background-size: cover;
      position: absolute;
      top: 0px;
@@ -86,7 +107,9 @@ html, body{
      bottom: 0px;
      left: 0px;
 }
-
+#signInContainer{
+     margin-top: 100px;
+}
 #containerHome{
      padding: 0px;
     

@@ -30,7 +30,7 @@ module.exports = React.createClass({
 					<input type="text" className="form-control" id="name" name="name" value={this.state.name} onChange={this.handleInputChange}/>
 				</div>
 				<div className="form-group">
-					<label className="control-label" htmlFor="expectedTime">Assigned: </label>
+					<label className="control-label" htmlFor="expectedTime">Estimated Time: </label>
 					<input type="text" className="form-control" id="expectedTime" value={this.state.address} name="expectedTime" onChange={this.handleInputChange}/>
 				</div>
 

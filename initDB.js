@@ -13,6 +13,7 @@
 
 var mongoose = require('mongoose');
 var Chore   = require('./server/data/chore');
+var User = require('./server/data/user');
 
 // Connect to the Mongo database, whether locally or on Heroku
 // MAKE SURE TO CHANGE THE NAME FROM 'lab7' TO ... IN OTHER PROJECTS
@@ -29,8 +30,11 @@ mongoose.connect(database_uri);
 
 // Step 1: load the JSON data
 var chores_json = require('./chores.json');
+var teammember_json = require('./users.json');
 
 // Step 2: Remove all existing documents
+
+
 Chore
   .find()
   .remove()
