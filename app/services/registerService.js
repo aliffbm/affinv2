@@ -1,7 +1,7 @@
 var $ = require("jquery");
 var promise = require("es6-promise");
-var resourceUrl = "http://localhost:7777/api/users";
-//var resourceUrl = "https://a8-affiniate.herokuapp.com/api/users";
+//var resourceUrl = "http://localhost:7777/api/users";
+var resourceUrl = "https://a8-affiniate.herokuapp.com/api/users";
 
 module.exports = {
     addUser: function (user) {
