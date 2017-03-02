@@ -9,6 +9,7 @@ module.exports = React.createClass({
     },
 
     render:function(){
+        console.log("The image URL is " + this.props.info.image);
         return(
             <div className="panel panel-default">
                 <div className="panel-heading">
@@ -18,6 +19,10 @@ module.exports = React.createClass({
 
                 <div className="panel-body">
                     {this.props.info.expectedTime}
+                </div>
+                <div className="panel-body">
+                    <img className="img-responsive" src={this.props.info.image}/>
+
                 </div>
             </div>
         )

@@ -1,7 +1,7 @@
 var $ = require("jquery");
 var promise = require("es6-promise");
-resourceUrl = "http://localhost:7777/api/chores";
-var resourceUrl = "https://a8-affiniate.herokuapp.com/api/chores";
+var resourceUrl = "http://localhost:7777/api/chores";
+//var resourceUrl = "https://a8-affiniate.herokuapp.com/api/chores";
 
 module.exports = {
     addChore: function (chore) {

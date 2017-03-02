@@ -1,18 +1,22 @@
 [
 		{
 			"name": "Dishes",
-			"expectedTime": "30 min"
+			"expectedTime": "30 min",
+			"image": "sink.jpg"
 		},
 		{
 			"name": "Trash",
-			"expectedTime": "10 min"
+			"expectedTime": "10 min",
+			"image": "oven_3.jpg"
 		},
 		{
 			"name": "Vacuuming",
-			"expectedTime": "45 min"
+			"expectedTime": "45 min",
+			"image": "shower.jpg"
 		},
 		{
 			"name": "Mopping",
-			"expectedTime": "1 hr"
+			"expectedTime": "1 hr",
+			"image": "laundry.jpg"
 		}
 ]
