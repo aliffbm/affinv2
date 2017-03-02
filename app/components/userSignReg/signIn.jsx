@@ -16,10 +16,9 @@ module.exports = React.createClass({
 	addUser:function(e){
 		e.preventDefault();
 		actions.addUser(this.state);
-		alert("Hello, " + this.state.name + "!");
-		console.log(this.state)
-		console.log("These are props");
-		console.log(this.props);
+		//console.log(this.state)
+		//console.log("These are props");
+		//console.log(this.props);
 		this.props.handleLoginn();
 		
 

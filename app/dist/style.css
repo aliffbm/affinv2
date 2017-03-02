@@ -103,6 +103,15 @@ h4 strong{
      border-radius: 50px;
 }
 
+#homePageIn{
+     background-color: #fc8e3a;
+     background-size: cover;
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     bottom: 0px;
+     left: 0px;
+}
 #homePage{
      background-image: url("togetherness.jpg");
      background-size: cover;
@@ -143,12 +152,14 @@ h4 strong{
      border-bottom: 1px solid #fff;
 }
 #size_of_task_div{
+     background-image: url(sink.jpg);
      min-height: 300px;
      background-repeat: no-repeat;
      background-size: cover;
      padding: 0px;
 }
 #task_text_container_header{
+
      text-shadow: 1px 1px 1px black;
      margin: 0px;
 }

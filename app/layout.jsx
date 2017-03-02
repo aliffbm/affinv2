@@ -14,7 +14,12 @@ ReactBoot = require('react-bootstrap/');
 
 module.exports = React.createClass({
 
-
+handleHomeClick(){
+  this.props.handleHome();
+},
+handleChoresClick(){
+  this.props.handleChores();
+},
 
 render: function(){
 Navbar = ReactBoot.Navbar;
@@ -38,8 +43,8 @@ Nav = ReactBoot.Nav;
 
     <Navbar.Collapse>
       <Nav>
-        <NavItem className="navbarColor" id="makeWhite" eventKey={1} href="#">Home</NavItem>
-        <NavItem className="navbarColor" id="makeWhite" eventKey={2} href="#">Chores</NavItem>
+        <NavItem className="navbarColor" id="makeWhite" eventKey={1} href="#" onClick={this.handleHomeClick}>Home</NavItem>
+        <NavItem className="navbarColor" id="makeWhite" eventKey={2} href="#" onClick={this.handleChoresClick}>Chores</NavItem>
       </Nav>
       <Nav pullRight className="navbarColor" id="navHeaderRight">
         <NavItem eventKey={1} id="makeWhite" href="#"><span className="glyphicon glyphicon-user"></span>Sign Up</NavItem>
