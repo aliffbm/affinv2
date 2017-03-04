@@ -28,8 +28,7 @@ NavDropdown = ReactBoot.NavDropdown;
 MenuItem = ReactBoot.MenuItem;
 Nav = ReactBoot.Nav;
 
-  let signedIn;
-  let signedInNav;
+ 
 
 
 

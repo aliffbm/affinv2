@@ -6,12 +6,18 @@ module.exports = React.createClass({
 
 render: function(){
 
+	console.log("Printing Home Props.....");
+	console.log(this.props.user[0].name);
+	/*for(var i=0;i<this.props.user.length;i++){
+		if(this)
+	}*/
+
 return(
 		<div className="container" id="homePageIn">
 			<div className="container" id="containerHome">
 				<div className="row" id="task_to_complete_home">
 					<div className="col-sm-12 text-center">
-						
+						<h1>Hello, {this.props.user[0].name}</h1>
 					 	<div className="col-sm-7" id="size_of_task_div">
 					 	<div className="col-sm-12" id="task_text_container_header">
 					 		<h3>Your task is dishes</h3>

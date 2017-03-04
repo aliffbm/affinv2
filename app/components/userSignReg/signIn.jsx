@@ -1,5 +1,5 @@
 var React = require('react');
-var actions = require('../../actions/RegisterUserActions');
+var actions = require('../../actions/UserActions');
 
 
 module.exports = React.createClass({

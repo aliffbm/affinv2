@@ -3,6 +3,7 @@ var ChoreInfo = require("./choresInfo.jsx");
 var AddChore = require("./AddChore.jsx");
 var Sort = require('react-sortable-hoc');
 
+
 SortableContainer = Sort.SortableContainer;
 arrayMove = Sort.arrayMove;
 
@@ -35,7 +36,7 @@ module.exports = React.createClass({
 
    render:function(){
 
-    console.log(this.props.chores);
+    console.log(this.props);
        return(
           <div className="container" id="choreContainer">
            <div className="row">
@@ -44,9 +45,9 @@ module.exports = React.createClass({
                 </div>
                 <div className="col-md-6">
                     {
-                        this.props.chores.map(function(s,index){
+                        this.props.users.map(function(s,index){
                             return(
-                                <ChoreInfo info={s} key={"chore"+index} />
+                                <img info={s} key={"chore"+index} />
                             )         
                         })
                     }

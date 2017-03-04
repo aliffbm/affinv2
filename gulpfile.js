@@ -14,7 +14,7 @@ gulp.task("bundle", function(){
 });
 
 gulp.task("copy", ["bundle"], function(){
-	return gulp.src(["app/index.html", "app/images/*","app/lib/bootstrap-css/css/bootstrap.min.css", "app/lib/bootstrap-css/css/bootstrap-theme.min.css", "app/style.css", "app/node_modules/jquery/jquery.min.js"])
+	return gulp.src(["app/index.html", "app/images/*","app/images/svg/*", "app/lib/bootstrap-css/css/bootstrap.min.css", "app/lib/bootstrap-css/css/bootstrap-theme.min.css", "app/style.css", "app/node_modules/jquery/jquery.min.js"])
 		.pipe(gulp.dest("app/dist"));
 
 });

@@ -2,7 +2,7 @@ var React = require("react");
 var ReactDOM = require("react-dom");
 var ChoreList = require("./components/choreList.jsx");
 var choresStore = require("./stores/choresStore");
-var registerStore = require("./stores/registerStore");
+var UserStore = require("./stores/UserStore");
 var Navigation = require("./layout.jsx");
 var ReactDomServer = require('react-dom/server');
 var Home = require('./home.jsx');
@@ -20,15 +20,17 @@ var getUsersCallback = function(user){
     _user = user;
     render();
 };
+
 choresStore.onChange(getChoresCallback);
-registerStore.onChange(getUsersCallback);
+UserStore.onChange(getUsersCallback);
 
 
 var Main = React.createClass({
 	getInitialState:function(){
 		return{
 			isLoggedIn: false,
-			route: ""
+			route: "",
+			userProfileName: ""
 		}
 	},
 
@@ -37,6 +39,9 @@ var Main = React.createClass({
 	},
 	handleChores(){
 		this.setState({route: "chores"})
+	},
+	handleUserProfile(userName){
+		this.setState({userProfile: userName})
 	},
 
 	handleLogin(){
@@ -51,7 +56,7 @@ var Main = React.createClass({
 		return(<div><Navigation handleHome={this.handleHome}/><ChoreList chores={this.props.chore} /></div>)
 	},
 	getHome:function(){
-		return(<div><Navigation handleChores={this.handleChores}/><Home/></div>)
+		return(<div><Navigation handleChores={this.handleChores}/><Home user={this.props.user} userProfile={this.state.userProfileName}/></div>)
 	},
 	checkHtml:function(){
 		let html;
@@ -79,11 +84,13 @@ var Main = React.createClass({
 
 
 
-
+console.log("Name on main is: ");
+console.log(_user);
+console.log(_chores);
 
 
 function render(){
-    ReactDOM.render(<Main chore={_chores}/>, document.getElementById("container"));    
+    ReactDOM.render(<Main chore={_chores} user={_user}/>, document.getElementById("container"));    
 }
 
 //<div><Navigation/><ChoreList chores={_chores} /></div>

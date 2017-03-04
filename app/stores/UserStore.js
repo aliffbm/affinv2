@@ -1,5 +1,5 @@
 var dispatcher = require("../dispatcher");
-var userService = require("../services/registerService");
+var userService = require("../services/UserService");
 
 function userStore() {
     var listeners = [];

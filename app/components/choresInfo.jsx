@@ -1,6 +1,6 @@
 var React = require("react");
 var actions = require("../actions/ChoresActions");
-
+var Modal = require('./emotionModal.jsx');
 module.exports = React.createClass({
     
     deleteChore: function(e){
@@ -17,7 +17,8 @@ module.exports = React.createClass({
             <div className="panel panel-default">
                 <div className="panel-heading">
                     {this.props.info.name}
-                    <img className="img-responsive" id="response-glyph" src="thought.svg" href="#" onClick={this.handleClick}></img>
+                    <Modal id="response-glyph" emosvg={this.props.emosvg}/>
+
                 	<span className="pull-right text-uppercase delete-button" onClick={this.deleteChore}>&times;</span>
                 </div>
 

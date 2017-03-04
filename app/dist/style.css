@@ -14,6 +14,14 @@ h4 strong{
      font-family: Georgia;
 
 }
+img.modal{
+     width: 50px;
+
+}
+
+.emoSvg{
+     width:64px;
+}
 .definitionPad{
      background-color: black;
      position: absolute;
@@ -104,7 +112,7 @@ h4 strong{
 }
 
 #homePageIn{
-     background-color: #fc8e3a;
+     background-color: #CCFFFF;
      background-size: cover;
      position: absolute;
      top: 0px;
